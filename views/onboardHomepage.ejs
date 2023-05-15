@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Welcome to {onboard}</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo">&#123onboard&#125</h1>
+    </header>
+
+    <section id="modules">
+        <h1 id="header">Learn to Code</h1>
+        <article>
+            <!-- <img src="Resources/web-development.png" alt=""> -->
+            <h1>Module 1</h1>
+            <h4> Introduction to Web Development</h4>
+            <p>Learn the essential foundations of web development with HTML, CSS, and JavaScript, along with an understanding of web servers and HTTP protocols.</p>
+        </article>
+        <article>
+            <!-- <img src="Resources/ui-design.png" alt=""> -->
+            <h1>Module 2</h1>
+            <h4> Front-End Development</h4>
+            <p>Elevate your skills with advanced HTML and CSS techniques, responsive web design principles, and dive into React, React Router, Redux, and API consumption.</p>
+        </article>
+        <article>
+            <h1>Module 3</h1>
+            <h4> Back-End Development</h4>
+            <p>Develop server-side applications using Node.js, Express.js, and SQL. Gain expertise in database design, API development, authentication, authorization, and testing.</p>
+        </article>
+        <article>
+            <h1>Module 4</h1>
+            <h4> Full-Stack Development</h4>
+            <p>Become a well-rounded developer by mastering the MERN Stack (MongoDB, Express.js, React, Node.js). Build RESTful APIs, implement secure authentication, and learn deployment with Heroku.</p>
+        </article>
+        <article>
+            <h1>Module 5</h1>
+            <h4> Advanced Topics in Full Stack Development</h4>
+            <p>Take your skills to the next level with advanced React concepts, scaling web applications, microservices, containerization with Docker and Kubernetes, and DevOps practices for seamless deployment.</p>
+        </article>
+    </section>
+    
+    <!-- <section id="testimonies">
+        <div id="testimonyName">
+            <h3>Mikael B.</h3>
+        </div>
+        <div id="testimonyImage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhWPoHjjZcbAnMDb_PYZYLEPUffOlA1ks3TUr2vUr7&s" alt="Image of Mikael B.">
+        </div>
+        <div id="testimonySnapshot">
+            <p>"My experince with onboard was great!"</p>
+        </div>
+    </section> -->
+
+    <section id="moreInfoSignup">
+        <h1>Contact us to Learn More!</h1>
+        <br>
+        <form action="/generateLead" method="post">
+            <div> 
+                <input name="firstName" id="firstName" type="text" placeholder="First Name" required>
+            </div>
+            <div> 
+                <input name="lastName" id="lastName" type="text" placeholder="Last Name" required>
+            </div>
+            <div>
+                <input name="email" id="email" type="email" placeholder="Email address" required>
+            </div>
+            <div>
+                <input name="mobile" id="mobile" type="text" placeholder=" Mobile (xxx-xxx-xxxx)" required>
+            </div>
+            <div>
+                <textarea name="textBox" id="textBox" cols="16" rows="5" placeholder="Drop A Note"></textarea>
+            </div>
+            <div id="signupBtn">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright @ 2023</p> 
+    </footer>
+</body>
+</html>
