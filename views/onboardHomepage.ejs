@@ -4,45 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleDesktop.css">
+    <link rel="stylesheet" href="../css/styleTablet.css">
+    <link rel="stylesheet" href="../css/styleMobile.css">
     <title>Welcome to {onboard}</title>
 </head>
 <body>
     <header>
         <h1 id="logo">&#123onboard&#125</h1>
+        <button id="learnMore">Learn More</button>
     </header>
 
+    <section id="description">
+        <div id="descriptionTextbox">
+            <div id="partTime">PART-TIME PROGRAM</div>
+            <div id="fullstack">Full-Stack Development <br> Bootcamp Online</div>
+            <div id="live"> Live Lectures at Your Pace</div>
+        </div>
+        <div id="phraseOne">
+            <p>Learning <br> Made <br> Easy</p>
+        </div>
+    </section>
+
     <section id="modules">
-        <h1 id="header">Learn to Code</h1>
         <article>
-            <!-- <img src="Resources/web-development.png" alt=""> -->
             <h1>Module 1</h1>
             <h4> Introduction to Web Development</h4>
-            <p>Learn the essential foundations of web development with HTML, CSS, and JavaScript, along with an understanding of web servers and HTTP protocols.</p>
+            <div id="subjects">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+            </div>
         </article>
         <article>
-            <!-- <img src="Resources/ui-design.png" alt=""> -->
             <h1>Module 2</h1>
-            <h4> Front-End Development</h4>
-            <p>Elevate your skills with advanced HTML and CSS techniques, responsive web design principles, and dive into React, React Router, Redux, and API consumption.</p>
+            <h4> Front-End <br> Development</h4>
+            <div id="subjects">
+                <p>React</p>
+                <p>Redux</p>
+                <p>API</p>
+            </div>
         </article>
         <article>
             <h1>Module 3</h1>
-            <h4> Back-End Development</h4>
-            <p>Develop server-side applications using Node.js, Express.js, and SQL. Gain expertise in database design, API development, authentication, authorization, and testing.</p>
+            <h4> Back-End  <br> Development</h4>
+            <div id="subjects">
+                <p>Node.js</p>
+                <p>Express.js</p>
+                <p>MongoDB</p>
+            </div>
         </article>
         <article>
             <h1>Module 4</h1>
-            <h4> Full-Stack Development</h4>
-            <p>Become a well-rounded developer by mastering the MERN Stack (MongoDB, Express.js, React, Node.js). Build RESTful APIs, implement secure authentication, and learn deployment with Heroku.</p>
-        </article>
-        <article>
-            <h1>Module 5</h1>
-            <h4> Advanced Topics in Full Stack Development</h4>
-            <p>Take your skills to the next level with advanced React concepts, scaling web applications, microservices, containerization with Docker and Kubernetes, and DevOps practices for seamless deployment.</p>
+            <h4> Full-Stack <br> Development</h4>
+            <div id="subjects">
+                <p>MERN Stack</p>
+                <p>RESTful API</p>
+            </div>
         </article>
     </section>
     
+    <section id="list">
+        <div id="phraseTwo">
+            <img src="Resources/do_something_great.jpg" alt="">
+        </div>
+        <div id="listItems">
+            <ul>
+                <li>Interactive Project-Based Learning</li>
+                <li>GitHub Project Portfolio</li>
+                <li>1:1 Coaching</li>
+                <li>Mock Interviews</li>
+                <li>Job Search Support</li>
+            </ul>
+        </div>
+      
+    </section>
+
+
     <!-- <section id="testimonies">
         <div id="testimonyName">
             <h3>Mikael B.</h3>
@@ -56,8 +94,9 @@
     </section> -->
 
     <section id="moreInfoSignup">
-        <h1>Contact us to Learn More!</h1>
+        <h1>Contact us for more information</h1>
         <br>
+        <div id="message"></div>
         <form action="/generateLead" method="post">
             <div> 
                 <input name="firstName" id="firstName" type="text" placeholder="First Name" required>
@@ -75,12 +114,14 @@
                 <textarea name="textBox" id="textBox" cols="16" rows="5" placeholder="Drop A Note"></textarea>
             </div>
             <div id="signupBtn">
-                <button type="submit">Sign Up</button>
+                <button type="submit">Learn More</button>
             </div>
         </form>
     </section>
 
     <footer>
+        <p>© 2023</p>
+        <p>Live The Life You Love</p>
         <p>Developed by Mikael Borneo</p> 
     </footer>
 </body>
